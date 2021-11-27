@@ -3,6 +3,7 @@ package com.company;
 /**
  * interface IntList
  * */
+import java.util.LinkedList;
 import java.util.NoSuchElementException;
 public interface IntList{
 
@@ -30,4 +31,12 @@ public interface IntList{
      * @return la longueur de la liste
      * */
     int length();
+
+    /**
+     * @param intList
+     * @return la somme des éléments d’une liste
+     */
+    int sum(IntList intList);
+
+    LinkedList<Integer> getList();
 }
